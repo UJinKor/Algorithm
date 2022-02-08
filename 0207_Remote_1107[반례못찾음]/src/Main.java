@@ -4,6 +4,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
+////반례:
+/*
+99933
+2
+3 9 
+ */
 
 public class Main {
 	static int nearest = 500000;
@@ -37,6 +43,7 @@ public class Main {
 	public static void permu(int cnt, boolean prev, int num) {
 		if (cnt == 0) {
 			if(!prev&&num==0) return;
+			
 			nearest = Math.min(Math.abs(N - num) + intlen(num), nearest);
 			System.out.println(num+" "+nearest);
 			return;
