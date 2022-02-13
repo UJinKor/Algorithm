@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
+//	11596kb	80ms
 public class Main {
 	static int N,M;
 	static StringBuffer sb = new StringBuffer();
