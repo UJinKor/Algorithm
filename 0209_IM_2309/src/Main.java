@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
+//	11496	80
 public class Main {
 	static int[] trueDwarf;
 	static StringBuilder sb = new StringBuilder();
@@ -16,25 +16,25 @@ public class Main {
 		}
 		
 		Arrays.sort(dwarf);
-		combination(0,0);
+		combination(0,0,0);
 		System.out.println(sb);
 		
 	}
 	
-	public static void combination(int cnt,int start) {
+	public static void combination(int cnt,int start,int sum) {
+		if(sum>100) return;
 		if(sb.length()!=0) return;
 		if(cnt==7) {
-			if(Arrays.stream(trueDwarf).sum()==100) {
+			if(sum==100) {
 				for (int i = 0; i < trueDwarf.length; i++) {
-					sb.append(trueDwarf[i]+" ");
+					sb.append(trueDwarf[i]+"\n");
 				}
-				sb.append("\n");
 			}
 			return;
 		}
 		for (int i = start; i < 9; i++) {
 			trueDwarf[cnt] = dwarf[i];
-			combination(cnt+1,i+1);
+			combination(cnt+1,i+1,sum+dwarf[i]);
 		}
 	}
 
