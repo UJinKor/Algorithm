@@ -44,9 +44,7 @@ public class Main {
 		double rdy = Math.abs(hole.y-end.y);
 		double rdx = Math.abs(hole.x-end.x);
 		double rangle = Math.atan(rdy/rdx)*(180.0/Math.PI);
-//		System.out.println(1-Math.cos((90-Math.abs(rangle-angle))*(Math.PI/180.0)));
 		T = D*(1-Math.cos((90-Math.abs(rangle-angle))*(Math.PI/180.0)));
-//		System.out.println(T);
 		double dist = Math.sqrt((dx*dx)+(dy*dy));//공과 공사이의 거리
 		double ceta = Math.atan((D-T)/dist);
 		if(wangle<=180) {
