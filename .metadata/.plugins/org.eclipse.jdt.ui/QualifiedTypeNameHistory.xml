@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="javax.xml.soap.SAAJResult"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.Principal"/>
 <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
@@ -19,12 +18,13 @@
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>
