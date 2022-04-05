@@ -20,7 +20,7 @@ public class Main {
 		if(N>=3) dp[3] = glasses[3]+Math.max(glasses[1],glasses[2]);
 		for (int i = 4; i <= N; i++) {
 			dp[i] = Math.max(dp[i-3]+glasses[i-1],dp[i-2])+glasses[i];
-			dp[i] = Math.max(dp[i], dp[i-4]+glasses[i-1]+glasses[i]);
+			dp[i] = Math.max(dp[i], glasses[i-1]+glasses[i]);
 		}
 		int max = 0;
 		for (int i = 1; i <= N; i++) {
