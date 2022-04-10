@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+
 public class Main_2669_직사각형_네개의_합집합의_면적_구하기 {
 	static boolean[][] arr = new boolean[101][101];
 	public static void main(String[] args) throws IOException {
