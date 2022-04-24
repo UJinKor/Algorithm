@@ -5,10 +5,11 @@ import java.io.InputStreamReader;
 public class Main {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
-		sb.append(br.readLine()).append("??!");
-		System.out.println(sb);
+		System.out.println("       _.-;;-._");
+		System.out.println("'-..-'|   ||   |");
+		System.out.println("'-..-'|_.-;;-._|");
+		System.out.println("'-..-'|   ||   |");
+		System.out.println("'-..-'|_.-''-._|");
 	}
 
 }
