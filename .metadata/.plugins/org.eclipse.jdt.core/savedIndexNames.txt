@@ -48,8 +48,8 @@ INDEX VERSION 1.131+C:\Users\0312j\OneDrive\바탕 화면\SSAFY 7기\백준\.met
 2283681759.index
 693108098.index
 2792254283.index
-132973910.index
 674517826.index
+132973910.index
 3271193799.index
 553899643.index
 258052925.index
