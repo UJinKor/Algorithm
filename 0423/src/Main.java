@@ -6,13 +6,9 @@ public class Main {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int sum = 0;
-		for (int i = 0; i < 4; i++) {
-			sum+= Integer.parseInt(br.readLine());
-		}
-		
-		System.out.println(sum/60);
-		System.out.println(sum%60);
+		int Y = Integer.parseInt(br.readLine());
+		int M = Integer.parseInt(br.readLine());
+		System.out.println(2*M-Y);
 	}
 
 }
