@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main_17298_오큰수 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		int n = sc.nextInt();
+		
+		int ans = ((int)((a/b)*Math.pow(10, n)))%10;
+		
+		System.out.println(ans);
+	}
+
+}

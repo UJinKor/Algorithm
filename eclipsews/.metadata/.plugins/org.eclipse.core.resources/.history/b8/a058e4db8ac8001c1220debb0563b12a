@@ -1,0 +1,152 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main_17298_오큰수 {
+	static int N,M,K;
+	static int[] dice = {0,0,0,0,0,0};
+	static int[][] map;
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		int y = Integer.parseInt(st.nextToken());
+		int x = Integer.parseInt(st.nextToken());
+		K = Integer.parseInt(st.nextToken());
+		map = new int[N][M];
+		for (int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine()," ");
+			for (int j = 0; j < M; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		st = new StringTokenizer(br.readLine()," ");
+		int curI = 7-1; //현재 바닥면
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < K; i++) {
+			int dir = Integer.parseInt(st.nextToken());
+			int nr = y+dr[dir-1];
+			int nc = x+dc[dir-1];
+			if(nr<0 || nc<0 || nr>= N || nc>=M) continue;
+			int nextI = roll(curI,dir); // 굴린 후 주사위 바닥 인덱스
+			System.out.println(nextI);
+			if(map[nr][nc]==0) {
+				map[nr][nc] = dice[nextI-1];
+			} else {
+				dice[nextI-1] = map[nr][nc];
+				map[nr][nc] = 0;
+			}
+			sb.append(dice[7-nextI-1]).append("\n");
+			curI = nextI;
+			y = nr;
+			x = nc;
+		}
+//		System.out.println(sb);
+	}
+	static int[] dr = {0,0,-1,1};
+	static int[] dc = {1,-1,0,0};
+	public static int roll(int n,int dir) { //n : 현재바닥면
+		int nextN=-1; //다음 바닥면
+		switch(n) {
+		case 1:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //북
+				nextN = 2;
+				break;
+			case 4: //남
+				nextN = 5;
+				break;
+			}
+			break;
+		case 2:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //북
+				nextN = 6;
+				break;
+			case 4: //남
+				nextN = 1;
+				break;
+			}
+			break;
+		case 3:
+			switch(dir) {
+			case 1: //동
+				nextN = 6;
+				break;
+			case 2: //서
+				nextN = 1;
+				break;
+			case 3: //북
+				nextN = 2;
+				break;
+			case 4: //남
+				nextN = 5;
+				break;
+			}
+			break;
+		case 4:
+			switch(dir) {
+			case 1: //동
+				nextN = 1;
+				break;
+			case 2: //서
+				nextN = 6;
+				break;
+			case 3: //북
+				nextN = 2;
+				break;
+			case 4: //남
+				nextN = 5;
+				break;
+			}
+			break;
+		case 5:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //북
+				nextN = 1;
+				break;
+			case 4: //남
+				nextN = 6;
+				break;
+			}
+			break;
+		case 6:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //북
+				nextN = 2;
+				break;
+			case 4: //남
+				nextN = 5;
+				break;
+			}
+			break;
+		}
+		return nextN;
+	}
+}

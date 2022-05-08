@@ -1,0 +1,126 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main_17298_오큰수 {
+	static int N,M,K;
+	static int[] dice = {0,0,0,0,0,0};
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		int y = Integer.parseInt(st.nextToken());
+		int x = Integer.parseInt(st.nextToken());
+		K = Integer.parseInt(st.nextToken());
+		
+		st = new StringTokenizer(br.readLine()," ");
+		for (int i = 0; i < K; i++) {
+			int dir = Integer.parseInt(st.nextToken());
+			
+		}
+	}
+	public static int roll(int n,int dir) { //n : 현재바닥면
+		int nextN=-1; //다음 바닥면
+		switch(n) {
+		case 1:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //남
+				nextN = 5;
+				break;
+			case 4: // 북
+				nextN = 2;
+				break;
+			}
+			break;
+		case 2:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //남
+				nextN = 1;
+				break;
+			case 4: // 북
+				nextN = 6;
+				break;
+			}
+			break;
+		case 3:
+			switch(dir) {
+			case 1: //동
+				nextN = 6;
+				break;
+			case 2: //서
+				nextN = 1;
+				break;
+			case 3: //남
+				nextN = 5;
+				break;
+			case 4: // 북
+				nextN = 2;
+				break;
+			}
+			break;
+		case 4:
+			switch(dir) {
+			case 1: //동
+				nextN = 1;
+				break;
+			case 2: //서
+				nextN = 6;
+				break;
+			case 3: //남
+				nextN = 5;
+				break;
+			case 4: // 북
+				nextN = 2;
+				break;
+			}
+			break;
+		case 5:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //남
+				nextN = 6;
+				break;
+			case 4: // 북
+				nextN = 1;
+				break;
+			}
+			break;
+		case 6:
+			switch(dir) {
+			case 1: //동
+				nextN = 3;
+				break;
+			case 2: //서
+				nextN = 4;
+				break;
+			case 3: //남
+				nextN = 2;
+				break;
+			case 4: // 북
+				nextN = 5;
+				break;
+			}
+			break;
+		}
+		return nextN;
+	}
+}

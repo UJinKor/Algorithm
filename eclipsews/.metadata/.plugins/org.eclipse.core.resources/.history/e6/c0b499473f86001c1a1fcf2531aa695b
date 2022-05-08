@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class Main_17298_오큰수 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		int n = sc.nextInt();
+		
+		System.out.println(a);
+	}
+
+}
