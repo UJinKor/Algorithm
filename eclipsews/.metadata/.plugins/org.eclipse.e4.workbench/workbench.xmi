@@ -3058,7 +3058,7 @@
   <commands xmi:id="_5AL2QrsyEeyGwqgpzbs0Zw" elementId="org.eclipse.jdt.ui.generate.javadoc" commandName="Generate Javadoc" description="Generates Javadoc for a selectable set of Java resources" category="_5AL3jLsyEeyGwqgpzbs0Zw"/>
   <commands xmi:id="_5AL2Q7syEeyGwqgpzbs0Zw" elementId="org.eclipse.egit.ui.RepositoriesViewConfigureGerritRemote" commandName="Gerrit Configuration..." category="_5AL3j7syEeyGwqgpzbs0Zw"/>
   <commands xmi:id="_5AL2RLsyEeyGwqgpzbs0Zw" elementId="org.eclipse.jdt.debug.ui.commands.StepIntoSelection" commandName="Step Into Selection" description="Step into the current selected statement" category="_5AL3brsyEeyGwqgpzbs0Zw"/>
-  <commands xmi:id="_5AL2RbsyEeyGwqgpzbs0Zw" elementId="org.eclipse.buildship.ui.shortcut.test.run" commandName="Run Gradle Test" description="Run Gradle test based on the current selection" category="_5AL3brsyEeyGwqgpzbs0Zw"/>
+  <commands xmi:id="_5AL2RbsyEeyGwqgpzbs0Zw" elementId="org.eclipse.buildship.ui.shortcut.Main.run" commandName="Run Gradle Test" description="Run Gradle Main based on the current selection" category="_5AL3brsyEeyGwqgpzbs0Zw"/>
   <commands xmi:id="_5AL2RrsyEeyGwqgpzbs0Zw" elementId="org.eclipse.ui.ide.configureColumns" commandName="Configure Columns..." description="Configure the columns in the markers view" category="_5AL3d7syEeyGwqgpzbs0Zw"/>
   <commands xmi:id="_5AL2R7syEeyGwqgpzbs0Zw" elementId="org.eclipse.egit.ui.team.ReplaceWithCommit" commandName="Replace with commit" category="_5AL3j7syEeyGwqgpzbs0Zw"/>
   <commands xmi:id="_5AL2SLsyEeyGwqgpzbs0Zw" elementId="org.eclipse.jst.pagedesigner.design" commandName="Graphical Designer" category="_5AL3fLsyEeyGwqgpzbs0Zw"/>

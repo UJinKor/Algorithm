@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main_G4_1504_특정한_최단_경로 {
     static class Node{
         int vertex;
         Node link;
@@ -49,7 +49,7 @@ public class Main {
             System.out.println(-1);
             return;
         }
-        else if(a1 == -1 && c1 == -1) {
+        else if(a1 == -1 || c1 == -1) {
             result1 = Integer.MAX_VALUE;
         }
         else {
@@ -59,18 +59,18 @@ public class Main {
         int result2 = 0;
         int a2 = dijkstra(0,n2);
         int c2 = dijkstra(n1,N-1);
-        if(a1 == -1 && c1 == -1) {
+        if(a1 == -1 || c1 == -1) {
             result2 = Integer.MAX_VALUE;
         }
         else {
             result2 = a2+b+c2;
         }
-        int max = Math.min(result1, result2);
+        int min = Math.min(result1, result2);
 //		System.out.println(result1+' '+result2);
-        if(max==Integer.MAX_VALUE) {
+        if(min==Integer.MAX_VALUE) {
             System.out.println(-1);
         } else {
-            System.out.println(max);
+            System.out.println(min);
         }
     }
     public static int dijkstra(int start,int end) {
