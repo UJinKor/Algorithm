@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main_17298_오큰수 {
+public class Main_17298 {
 	static int N,M,K;
 	static int[] dice = {0,0,0,0,0,0};
 	static int[] diceIndex = {1,2,3,4,5,6};

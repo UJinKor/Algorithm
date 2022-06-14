@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class Main_S2_14889_스타트와_링크 {
+public class Main_S2_14889 {
     static int[] nums;
     static int[][] arr;
     static int N;

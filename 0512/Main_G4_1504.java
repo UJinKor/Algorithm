@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main_G4_1504_특정한_최단_경로 {
+public class Main_G4_1504 {
     static class Node{
         int vertex;
         Node link;

@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.HashMap;
 
-public class Main_Test {
+public class Main_Collection {
     public static void main(String[] args) throws IOException {
         Calendar today = Calendar.getInstance();
         int year = today.get(Calendar.YEAR);

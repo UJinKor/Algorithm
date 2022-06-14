@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
-public class Main_G4_1062_가르침 {
+public class Main_G4_1062 {
     static int K,N;
     static String[] words;
     static int ans;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main_17298_오큰수 {
+public class Main_17298 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
